@@ -1,0 +1,14 @@
+#INSTALAÇÃO GLOBAL ANGULAR
+npm install -g @angular/cli
+
+#CRIAR PROJETO
+ng new receita
+
+#GIT IGNOR
+npm install
+
+#SIMULAÇÃO DE REQUISIÇÕES COM ARQUIVO JSON - INSTALAR
+npm i json-server
+
+#SIMULAÇÃO DE REQUISIÇÕES COM ARQUIVO JSON - EXECUTAR
+npm i json-server
