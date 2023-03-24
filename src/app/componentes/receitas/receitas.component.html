@@ -1,1 +1,10 @@
-<p>receitas works!</p>
+<div>
+    <h1>Receitas</h1>
+    <ul>
+        <li *ngFor="let a of receitas">
+            <p>Receita: {{ a.titulo }}</p>
+            <p>Receita: {{ a.resumo }}</p>
+            <p>Detalhes: <a routerLink="/receitas/{{a.id}}">Detalhes</a></p>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,15 @@
+<div *ngIf="receita">
+    <p>Receita: {{ receita.titulo }}</p>
+    <p>Resumo: {{ receita.resumo }}</p>
+    <p>
+        Ingredientes:                   
+    </p>
+    <ul>
+        <li *ngFor="let item of receita.ingredientes; let i = index">{{i+1}}:{{ item }}</li>
+    </ul>
+    <p>Tempo: {{ receita.tempo }} minutos</p>
+    <p>Passos:</p>
+    <ul>
+        <li *ngFor="let item of receita.passos; let i = index">{{i+1}}:{{ item }}</li>
+    </ul>
+</div>
