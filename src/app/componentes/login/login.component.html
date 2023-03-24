@@ -1,3 +1,18 @@
 <p>Receitas: <a routerLink="/receitas">Receitas</a></p>
 
+<div class="central">
+
+    <img src="assets/img/logo-coco-bambu.png">
+
+    <input type="text" class="inputForm" [(ngModel)]="login">
+    <input type="password" class="inputForm" [(ngModel)]="senha">
+    
+    <button class="inputForm" (click)="validaLogin(login, senha)">Acessar</button><br>
+
+    <div *ngIf=" erro === true ">
+        <p>Erro ao logar, tente novamente!</p>
+    </div>
+
+</div>
+
 
