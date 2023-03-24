@@ -11,7 +11,7 @@ npm install
 npm i json-server
 
 #SIMULAÇÃO DE REQUISIÇÕES COM ARQUIVO JSON - EXECUTAR
-npm i json-server
+npm run server
 
 #EXECUTAR
 ng serve
