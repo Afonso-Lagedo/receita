@@ -1,11 +1,13 @@
 <p>Home: <a routerLink="/">Home</a></p>
 <div>
     <h1>Receitas</h1>
+    <label for="filtro">Filtrar:</label>
+    <input type="text" id="filtro" [(ngModel)]="filtro">
     <ul>
-        <li *ngFor="let a of receitas">
-            <p>Receita: {{ a.titulo }}</p>
-            <p>Receita: {{ a.resumo }}</p>
-            <p>Detalhes: <a routerLink="/receitas/{{a.id}}">Detalhes</a></p>
+        <li *ngFor="let receita of receitas" [hidden]="filtro && !receita.titulo.includes(filtro)">
+            <p>Receita: {{ receita.titulo }}</p>
+            <p>Resumo: {{ receita.resumo }}</p>
+            <p>Detalhes: <a routerLink="/receitas/{{receita.id}}">Detalhes</a></p>
         </li>
     </ul>
 </div>

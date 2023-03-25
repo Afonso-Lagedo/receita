@@ -9,6 +9,7 @@ import { ReceitasService } from 'src/app/services/receitas.service';
 })
 export class ReceitasComponent {
   receitas: Receita[]=[];
+  filtro!:string;
 
   constructor(private receitaService: ReceitasService){
     this.getReceitas()
