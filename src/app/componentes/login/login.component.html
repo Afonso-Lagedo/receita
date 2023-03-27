@@ -1,15 +1,18 @@
-<p>Receitas: <a routerLink="/receitas">Receitas</a></p>
-
-<div class="central">
+<div class="central" [ngStyle]="{'background-image': 'url(assets/img/img-bg-login.jpg)', 'background-size': 'cover'}">
 
     <img src="assets/img/logo-coco-bambu.png">
 
-    <input type="text" class="inputForm" [(ngModel)]="login">
-    <input type="password" class="inputForm" [(ngModel)]="senha">
-    
-    <button class="inputForm" (click)="validaLogin(login, senha)">Acessar</button><br>
+    <input type="text" class="inputForm iconInput" [(ngModel)]="login" placeholder="Nome do usuário"
+    [ngStyle]="{'background-image': 'url(assets/img/icon-login.png)'}"
+    >
 
-    <div *ngIf=" erro === true ">
+    <input type="password" class="inputForm iconInput" [(ngModel)]="senha" placeholder="Senha"
+    [ngStyle]="{'background-image': 'url(assets/img/icon-key.png)'}"
+    >
+    
+    <button class="inputBtn" (click)="validaLogin(login, senha)">Acessar</button><br>
+
+    <div class="erro" *ngIf=" erro === true ">
         <p>Erro ao logar, tente novamente!</p>
     </div>
 
