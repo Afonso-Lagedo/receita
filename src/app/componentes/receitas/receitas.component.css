@@ -1,0 +1,65 @@
+#logoTopo{
+    width: 100px;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.container {
+    width: 100%;
+    background-color: black;
+}
+
+.elemento1, .elemento2, .elemento3 {
+    display: inline-block;
+    color:white;
+    margin: 20px 20px;
+}
+
+.elemento1{
+    width: 25%;
+}
+.elemento2{
+    width: 35%;
+}
+
+#filtro{    
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 2.5em;
+    height: 30px;
+    width: 90%;
+    border: none;
+}
+
+#sair{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 8px;
+    right:0;
+    margin-right: 30px;
+}  
+
+#receitas{
+    padding: 10px;
+}
+
+.caixaReceita{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#imgReceita{
+    width: 150px;
+}
+  
+#detalhes{
+    border: none;
+    background-color: orange;
+    color:white;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 10px;
+    width: 50px;
+    height: 50px;
+}

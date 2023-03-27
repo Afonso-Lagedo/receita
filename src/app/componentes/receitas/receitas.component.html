@@ -1,14 +1,31 @@
-<p>Home: <a routerLink="/">Home</a></p>
-<div>
-    <h1>Receitas</h1>
-    <label for="filtro">Filtrar:</label>
-    <input type="text" id="filtro" [(ngModel)]="filtro">
-    <ul>
-        <li *ngFor="let receita of receitas" [hidden]="filtro && !receita.titulo.includes(filtro)">
-            <img src="{{ receita.imgP }}">
-            <p>Receita: {{ receita.titulo }}</p>
-            <p>Resumo: {{ receita.resumo }}</p>
-            <p>Detalhes: <a routerLink="/receitas/{{receita.id}}">Detalhes</a></p>
-        </li>
-    </ul>
+<div class="container">
+    <div class="elemento1">
+        <img id="logoTopo" src="assets/img/logo-coco-bambu-mini.png">
+    </div>
+    <div class="elemento2">
+        <input type="text" id="filtro" [(ngModel)]="filtro"
+        [ngStyle]="{'background-image': 'url(assets/img/icon-busca.png)'}"
+        >
+    </div>
+    <div class="elemento3">
+        <a id="sair" routerLink="/">Sair</a>
+    </div>
+</div>
+  
+<div id="receitas">
+    <h2>Receitas</h2>
+
+    <div class="caixaReceita"  *ngFor="let receita of receitas" [hidden]="filtro && !receita.titulo.includes(filtro)">
+        <div>
+            <img id="imgReceita" src="{{ receita.imgP }}">
+        </div>
+        <div>
+            <b>{{ receita.titulo }}</b>
+            <p>{{ receita.resumo }}</p>
+        </div>
+        <div>
+            <button id="detalhes" routerLink="/receitas/{{receita.id}}">Ver<br>receita</button>
+        </div>
+    </div>
+
 </div>
