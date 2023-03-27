@@ -5,6 +5,7 @@
     <input type="text" id="filtro" [(ngModel)]="filtro">
     <ul>
         <li *ngFor="let receita of receitas" [hidden]="filtro && !receita.titulo.includes(filtro)">
+            <img src="{{ receita.imgP }}">
             <p>Receita: {{ receita.titulo }}</p>
             <p>Resumo: {{ receita.resumo }}</p>
             <p>Detalhes: <a routerLink="/receitas/{{receita.id}}">Detalhes</a></p>

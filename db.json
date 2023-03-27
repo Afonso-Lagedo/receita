@@ -23,7 +23,9 @@
                 "Junte água a tapar esta mistura e assim que ferver deite o arroz e mexa. Quando retomar a fervura, deixe cozer tapado durante 10 minutos, vá mexendo para não pegar.",
                 "Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida.",
                 "Depois temos o Arroz de Marisco Tradicional que leva todo o tipo marisco, desde sapateira, lagosta, mexilhões e etc."
-            ]
+            ],
+            "img":"assets/img/prato-arroz-grande.jpg",
+            "imgP":"assets/img/prato-arroz-marisco-peq.jpg"
         },
         {
             "id":2,
@@ -51,7 +53,9 @@
                 "Tempere com sal e pimenta.",
                 "Cubra com o molho já com o camarão.",
                 "Leve ao forno por 20 minutos."
-            ]            
+            ],
+            "img":"assets/img/prato-moqueca-grande.jpg",
+            "imgP":"assets/img/prato-moqueca-peq.jpg"            
         },
         {
             "id":3,
@@ -79,7 +83,9 @@
                 "Quando retomar a fervura, deixe cozer tapado durante 10 minutos, vá mexendo para não pegar.",
                 "Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida.",
                 "Selar os camarões, repita o processo com a lula e acabou!"
-            ]
+            ],
+            "img":"assets/img/prato-fruto-grande.jpg",
+            "imgP":"assets/img/prato-fruto-peq.jpg"
         },
         {
             "id":4,
@@ -103,7 +109,9 @@
                 "Escorra o macarrão, coloque em um recipiente e adicione o refogado de tomates",
                 "Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida.",
                 "Polvilhe o queijo ralado e sirva a seguir"
-            ]
+            ],
+            "img":"assets/img/prato-massa-grande.jpg",
+            "imgP":"assets/img/prato-massa-peq.jpg"
         },
         {
             "id":5,
@@ -133,7 +141,9 @@
                 "Acrescente os camarões e frite",
                 "Adicione as 2 latas de pomarola, o cheiro-verde, o pimentão e deixe cozinhar por alguns minutos",
                 "Junte na mesma panela, a mandioca batida no liquidificador, outro vidro de leite de coco e o azeite de dendê. Deixe levantar fervura e está pronto."
-            ]
+            ],
+            "img":"assets/img/prato-bobo-grande.jpg",
+            "imgP":"assets/img/prato-bobo-peq.jpg"
         }
     ]
 }

@@ -4,5 +4,7 @@ export interface Receita{
     resumo:string,
     ingredientes:string[],
     tempo:number,
-    passos:string[]
+    passos:string[],
+    imgP:string,
+    img:string
 }
