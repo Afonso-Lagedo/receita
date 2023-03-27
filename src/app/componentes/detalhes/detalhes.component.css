@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+}
+
+#imgDetalhes{
+    width: 100%;
+}
+
+#infoReceita{
+    padding: 15px;
+}
+
+#finalizar{
+    border: none;
+    padding: 10px;
+    color:white;
+}
+
+.btnVerde{
+    background-color: green;
+}
+
+.btnLaranja{
+    background-color: orange;
+}
+
+#topo{
+    position: relative;
+}
+
+#resumo{
+    color: white;
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+}
+
+#tempo{
+    text-align: center;
+    font-size: 10px;
+    margin: 10px;
+    position: absolute;
+    padding: 0 4px;
+    top: 0;
+    right: 0;
+    background-color: white;
+}

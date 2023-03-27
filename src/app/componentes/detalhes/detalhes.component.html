@@ -1,15 +1,36 @@
 <div *ngIf="receita">
-    <p>Receita: {{ receita.titulo }}</p>
-    <p>Resumo: {{ receita.resumo }}</p>
-    <p>
-        Ingredientes:                   
-    </p>
-    <ul>
-        <li *ngFor="let item of receita.ingredientes; let i = index">{{i+1}}:{{ item }}</li>
-    </ul>
-    <p>Tempo: {{ receita.tempo }} minutos</p>
-    <p>Passos:</p>
-    <ul>
-        <li *ngFor="let item of receita.passos; let i = index">{{i+1}}:{{ item }}</li>
-    </ul>
+    <div id="topo">
+        <img src="{{ receita.img }}" id="imgDetalhes">
+        
+        <div id="resumo">
+            <h3>{{ receita.titulo }}</h3>
+            <p>{{ receita.resumo }}</p>
+        </div>
+
+        <div id="tempo">
+            <p>Tempo de preparo <br> <b>{{ receita.tempo }} minutos</b></p>
+        </div>
+    </div>
+
+    <div id="infoReceita">
+        <b>Ingredientes</b>
+        <ul>
+            <li *ngFor="let item of receita.ingredientes; let i = index">
+                <input type="checkbox" [checked]="ingredientesSelecionados[i]" (click)="onCheckboxClick(); ingredientesSelecionados[i] = !ingredientesSelecionados[i]">{{ item }}
+            </li>
+        </ul>
+
+        <b>Modo de preparo</b>
+        <ul>
+            <li *ngFor="let item of receita.passos; let i = index">
+                <input type="checkbox" [checked]="passosSelecionados[i]" (click)="onCheckboxClick(); passosSelecionados[i] = !passosSelecionados[i]">
+                <b>Passo {{i+1}}</b>
+                <br>
+                {{ item }}
+            </li>
+        </ul>
+        
+        <button class="btnLaranja" id="finalizar" disabled>Finalizar</button>
+    </div>
+    
 </div>
